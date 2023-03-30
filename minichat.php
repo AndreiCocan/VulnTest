@@ -4,7 +4,7 @@
 	
 	include("./database.php");
 	
-	
+	 
 	function registerSession($current_user, $current_user_id, $current_user_nom, $current_user_prenom){
 		$_SESSION['current_user'] = $current_user;
 		$_SESSION['current_user_id'] = $current_user_id;
@@ -174,7 +174,7 @@
 				loginOrRegister('le login et le mot de passe ne peuvent pas etre vides');
 			}
 		}else{
-		// l'accès à cette page est fait par la redirection de minichat_save.php			
+		// l'accÃ¨s Ã  cette page est fait par la redirection de minichat_save.php			
 			// affichage du chat
 			afficherMiniChat($connected, $bdd);
 		}
